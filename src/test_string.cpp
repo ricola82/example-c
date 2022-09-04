@@ -5,7 +5,7 @@
 
 const char * FLAG = "FUZZING IS IMPORTANT";
 
-int test_string(const char *src, size_t len)
+int Fuzz_test_string(const char *src, size_t len)
 {
     if (len < strlen(FLAG)) {
         return 0;
