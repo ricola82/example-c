@@ -10,6 +10,6 @@
 #include <stdio.h>
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t * data, size_t size) {
-    test_string((const char *)data, size);
+    Fuzz_test_string((const char *)data, size);
     return 0;
 }

@@ -1,0 +1,9 @@
+base:
+  language: c
+  deps:
+    - run: apt update
+    - run: apt install -y cmake clang
+  steps:
+    - run: mkdir build && cd build
+    - run: cmake ..
+    - run: make

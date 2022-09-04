@@ -11,7 +11,7 @@ int main(int argc, char* const argv[]) {
         printf("USAGE: ./test_string <string>\n");
         return -1;
     }
-    int ret = test_string(argv[1], strlen(argv[1]));
+    int ret = Fuzz_test_string(argv[1], strlen(argv[1]));
     if (ret == 0) {
         printf("wrong flag!\n");
     } else {
